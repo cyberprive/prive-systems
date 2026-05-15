@@ -8,6 +8,7 @@ export function Navbar() {
   const links: Array<[string, keyof typeof t.nav]> = [
     ["#problems", "problems"],
     ["#solutions", "solutions"],
+    ["#examples", "examples"],
     ["#process", "process"],
     ["#benefits", "benefits"],
     ["#faq", "faq"],

@@ -17,6 +17,9 @@ export function HeroSection() {
           <p className="mt-6 text-lg leading-relaxed text-neutral-600 sm:text-xl">
             {t.hero.subtitle}
           </p>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-500">
+            {t.hero.audience}
+          </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#contact"
