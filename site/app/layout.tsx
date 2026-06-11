@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { LocaleProvider } from "@/lib/i18n";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,48 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://www.cyberprive.com";
-const TITLE = "Prive Systems — Enterprise-level tools for small businesses";
-const DESCRIPTION =
-  "Practical, custom operational systems for SMBs. Reduce repetitive work, organize information, and help your team operate at a higher level — without the enterprise budget.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: TITLE,
-  description: DESCRIPTION,
   applicationName: "Prive Systems",
   authors: [{ name: "Prive Systems" }],
   generator: "Next.js",
-  keywords: [
-    "operational systems",
-    "SMB software",
-    "custom internal tools",
-    "small business automation",
-    "AI-assisted workflows",
-    "Apple ecosystem consulting",
-    "cybersecurity SMB",
-    "Prive Systems",
-  ],
-  alternates: {
-    canonical: "/",
-    languages: {
-      en: "/",
-      es: "/",
-    },
-  },
-  openGraph: {
-    type: "website",
-    url: SITE_URL,
-    siteName: "Prive Systems",
-    title: TITLE,
-    description: DESCRIPTION,
-    locale: "en_US",
-    alternateLocale: ["es_ES"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: TITLE,
-    description: DESCRIPTION,
-  },
+  category: "business",
   robots: {
     index: true,
     follow: true,
@@ -67,22 +32,23 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  category: "business",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const h = await headers();
+  const path = h.get("x-pathname") ?? "/";
+  const lang = path.startsWith("/es") ? "es" : "en";
+
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-white text-neutral-900">
-        <LocaleProvider>{children}</LocaleProvider>
-      </body>
+      <body className="min-h-full bg-white text-neutral-900">{children}</body>
     </html>
   );
 }
