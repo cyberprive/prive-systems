@@ -13,10 +13,61 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.cyberprive.com";
+const TITLE = "Prive Systems — Enterprise-level tools for small businesses";
+const DESCRIPTION =
+  "Practical, custom operational systems for SMBs. Reduce repetitive work, organize information, and help your team operate at a higher level — without the enterprise budget.";
+
 export const metadata: Metadata = {
-  title: "Prive Systems — Enterprise-level tools for small businesses",
-  description:
-    "Practical, custom operational systems for SMBs. Reduce repetitive work, organize information, and help your team operate at a higher level — without the enterprise budget.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  applicationName: "Prive Systems",
+  authors: [{ name: "Prive Systems" }],
+  generator: "Next.js",
+  keywords: [
+    "operational systems",
+    "SMB software",
+    "custom internal tools",
+    "small business automation",
+    "AI-assisted workflows",
+    "Apple ecosystem consulting",
+    "cybersecurity SMB",
+    "Prive Systems",
+  ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      es: "/",
+    },
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "Prive Systems",
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: "en_US",
+    alternateLocale: ["es_ES"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "business",
 };
 
 export default function RootLayout({

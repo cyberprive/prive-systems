@@ -1,0 +1,42 @@
+# Prive Systems
+
+> Practical operational systems consultancy for small and mid-sized businesses (5–50 employees). Builds custom internal tools, AI-assisted workflows, and infrastructure that reduces repetitive work and helps teams operate at a higher level — without enterprise budgets.
+
+Prive Systems is **not** an AI agency, chatbot company, or generic automation reseller. It is an operational systems consultancy that builds structured, reliable internal tools with predictable behavior and human review. AI is used where it improves operations, not as the product itself.
+
+Built for service businesses, clinics, hospitality, professional practices, and other operations-heavy SMBs.
+
+## Core capabilities
+
+- **Custom operational systems** — internal tools designed around how the business already runs, not generic SaaS forced onto the team.
+- **Constrained AI workflows** — AI applied with controlled outputs, human review, and predictable behavior. No autonomous agents making business decisions.
+- **Data consolidation & automation** — scattered spreadsheets and manual handoffs replaced with clean, reviewable operational flows.
+- **Endpoint & workspace management** — Mac, iPhone, and iPad business environments deployed, secured, and standardized.
+- **Access control & operational safeguards** — controlled access, audit visibility, credential management, and permission structures built in from day one.
+- **Infrastructure cleanup** — simplifying, standardizing, and connecting tools the business already pays for.
+
+## Example applications
+
+- Automatic reconciliation between payment systems, invoices, and accounting software.
+- Customer inquiries routed automatically into structured follow-up workflows.
+- Inventory and data synchronized across operational systems.
+- Operational dashboards aggregating disconnected tools (bookings, billing, support, inventory).
+- Scheduled reporting that replaces manual weekly data collection.
+- Structured intake and onboarding flows that feed directly into operational systems.
+
+## Engagement model
+
+1. Free consultation — map current workflows, identify highest-friction bottlenecks.
+2. Custom implementation — build a system tailored to the existing operation (typically 2–6 weeks).
+3. Refine in production — adjust based on real-world use, document, train the team.
+
+No vendor lock-in. The system belongs to the business — not trapped behind a proprietary platform. Every automated step is visible, predictable, and reviewable.
+
+## Background
+
+Built on 15+ years supporting small businesses across operations, automation, cybersecurity, and Apple-based business environments.
+
+## Contact
+
+- Website: https://www.cyberprive.com
+- Languages: English, Spanish
