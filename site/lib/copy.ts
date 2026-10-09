@@ -231,6 +231,8 @@ export const copy = {
     footer: {
       tagline: "Operational systems for growing teams.",
       rights: "All rights reserved.",
+      privacy:
+        "This site uses Google Analytics to count visits. In the EEA, the UK and Switzerland it runs without cookies and stores nothing on your device; Google receives only anonymous, aggregated signals.",
     },
   },
   es: {
@@ -463,6 +465,8 @@ export const copy = {
     footer: {
       tagline: "Sistemas operativos para equipos en crecimiento.",
       rights: "Todos los derechos reservados.",
+      privacy:
+        "Este sitio usa Google Analytics para contar visitas. En el EEE, el Reino Unido y Suiza funciona sin cookies y no guarda nada en tu dispositivo; Google solo recibe señales anónimas y agregadas.",
     },
   },
 } as const;
